@@ -10,15 +10,15 @@ int main() {
         printf("Enter a number (Every other than numbers are equal to 0): ");
         scanf("%lf", &a);
     switch (tolower(korcs)) {
-    case 'c': res = 273 + a;
-    break;
-    case 'k': res = a - 273;
-    break;
+        case 'c': res = 273 + a;
+            break;
+        case 'k': res = a - 273;
+            break;
     default:
         printf("Wrong input!");
-       res = -DBL_MAX;
+        res = -DBL_MAX;
     }
     if(res!=-DBL_MAX)
-    printf("%.2lf", res);
+        printf("%.2lf", res);
     return 0;
 }
