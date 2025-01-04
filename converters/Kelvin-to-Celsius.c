@@ -1,5 +1,6 @@
-include <stdio.h>
+#include <stdio.h>
 #include <float.h>
+#include <ctype.h>
 
 int main() {
     char korcs;
@@ -8,7 +9,7 @@ int main() {
         scanf("%c", &korcs);
         printf("Enter a number (Every other than numbers are equal to 0): ");
         scanf("%lf", &a);
-    switch (korcs) {
+    switch (tolower(korcs)) {
     case 'c': res = 273 + a;
     break;
     case 'k': res = a - 273;
